@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+a{
+	text-decoration:none;
+	color:#fff;
+}
+
+#bollywood,#hollywood,#wwe {
+	font-family: brandon;
+	background-color:rgba(0,0,0,0.8);
+	height:400px;
+	font-size:36px;
+	font-weight:100;
+	color:#60cccc;
+}
+#par1{
+	background-image:url(../Images/n.jpg);
+	background-attachment:fixed;
+	background-size:cover;
+	background-repeat:no-repeat;
+	height:100%;
+}
+#hollywood{
+	background-color:rgba(0,0,0,0.6);
+	color:#fff;
+}
+#hollywood h2{
+	color:#60cccc;
+}
+#bollywood img{
+	height:200px;
+	width:200px;
+}
+#hollywood img{
+	height:200px;
+	width:200px;
+}
+#wwe img{
+	height:200px;
+	width:200px;
+}
+
+#bollywood img:hover{
+	opacity:0.6;
+}
+
+#hollywood img:hover{
+	opacity:0.6;
+}
+
+#wwe img:hover{
+	opacity:0.6;
+}
+
+#par1 a:hover{
+	color:#393;
+	text-decoration:underline;
+}
+#par1 a:hover img{
+	opacity:0.6;
+}
+
+
+#video_main{
+	position:relative;
+	top:182px;
+	width:100%;
+	height:500px;
+	background-color:#F2EEF1;
+	text-align:center;
+	font-size:40px;
+}
+#video_main_sub1{
+	font-size:34px;
+}
+#site_name{
+	color:#09F;
+	font-size:44px;
+	font-weight:bold;
+}
+#site_name a{
+	text-decoration:none;
+	color:#09f;
+}	
+#video_main_border{
+	margin:0px 50px 0px 50px;
+}
+
+
+#video_col1{
+	position:absolute;
+	left:5%;
+}
+#video_col2{
+	position:absolute;
+	right:25%;
+}
+#video_col3{
+	position:absolute;
+	left:25%;
+}
+#video_col4{
+	position:absolute;
+	right:5%;
+}
+
+
+
+
+
+
+
+
+
+

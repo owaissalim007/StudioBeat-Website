@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+#audio_parallax{
+	background-image:url(../Images/m.jpg);
+	background-attachment:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#division1, #division3 {
+	height:400px;
+	width:100%;
+	background-color: rgba(0,0,0,0.8);
+	color:#fff;
+	font-size:36px;
+}
+
+
+#division2, #division4 {
+	height:400px;
+	width:100%;
+	background-color:rgba(0,0,0,0.6);
+	color:#fff;
+	font-size:36px;
+}
+
+
+span{
+	color:#60cccc;
+}
+#div1_sub, #div2_sub, #div3_sub, #div4_sub {
+	margin-top:-60px;
+}
+span a img{
+	margin:0px 8px 0px 8px;
+	border-radius:100%;
+}
+#division1 a{
+	color:#fff;
+	text-decoration:none;
+}
+#division1 a:hover{
+	text-decoration:underline;
+	color:#090;
+}
+#division1 img:hover{
+	opacity:0.6;
+}
+
+#division2 a{
+	color:#fff;
+	text-decoration:none;
+}
+#division2 a:hover{
+	text-decoration:underline;
+	color:#090;
+}
+#division2 img:hover{
+	opacity:0.6;
+}
+
+#division3 a{
+	color:#fff;
+	text-decoration:none;
+}
+#division3 a:hover{
+	text-decoration:underline;
+	color:#090;
+}
+#division3 img:hover{
+	opacity:0.6;
+}
+
+#division4 a{
+	color:#fff;
+	text-decoration:none;
+}
+#division4 a:hover{
+	text-decoration:underline;
+	color:#090;
+}
+#division4 img:hover{
+	opacity:0.6;
+}
+#division1 a:hover img{
+	opacity:0.6;
+}
+#division2 a:hover img{
+	opacity:0.6;
+}
+#division3 a:hover img{
+	opacity:0.6;
+}
+#division4 a:hover img{
+	opacity:0.6;
+}
+
+
+#audio_main{
+	position:relative;
+	top:200px;
+	width:100%;
+	height:400px;
+	background-color:#F2EEF1;
+	text-align:center;
+	font-size:40px;
+}
+#audio_main_sub1{
+	font-size:34px;
+}
+#site_name{
+	color:#09F;
+	font-size:44px;
+	font-weight:bold;
+}
+#site_name a{
+	text-decoration:none;
+	color:#09f;
+}	
+#audio_main_border{
+	margin:0px 50px 0px 50px;
+}
+
+
+#audio_col1{
+	position:absolute;
+	left:15%;
+}
+#audio_col2{
+	position:absolute;
+	right:15%;
+}
+#audio_col3{
+	position:absolute;
+	left:15%;
+}
+#audio_col4{
+	position:absolute;
+	right:15%;
+}
+
+
+
+

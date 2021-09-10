@@ -1,0 +1,124 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ContactUs-StudioBeat</title>
+<link rel="stylesheet" type="text/css" href="CSS/abc.css">
+<style>
+#modal{
+	position:absolute;
+	margin-top:-50px;
+	top:0;
+	width:100%;
+	height:712px;
+	text-align:center;
+	background-image:url(Images/contactbg.jpg);
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#parallax{
+	background-color:rgba(0,0,0,0.6);
+	height:712px;
+	width:100%;
+}
+#contact-details{
+	position:relative;
+	height:450px;
+	width:600px;
+	top:200px;
+	text-align:center;
+	background-color:#fff;
+	color:#000;
+	transition:all ease-in 0.5s;
+	box-shadow:2px 3px 4px 3px rgba(50,50,50,0.5);
+}
+input[type=text]{
+	height:30px;
+	width:550px;
+	font-size:18px;
+	border-radius:2px;
+	border:solid 1.8px rgba(51,102,255,1);
+}
+input[type=reset]{
+	height:40px;
+	width:250px;
+	font-size:20px;
+	border-radius:6px;
+	background-color:#111;
+	color:#fff;
+}
+input[type=submit]{
+	height:40px;
+	width:250px;
+	font-size:20px;
+	border-radius:6px;
+	background-color:#111;
+	color:#fff;
+}
+input[type=reset]:hover{
+	background-color:#f0390f;
+	cursor:pointer;
+}
+input[type=submit]:hover{
+	background-color:#f0390f;
+	cursor:pointer;
+}
+textarea{
+	height:150px;
+	width:550px;
+	font-size:18px;
+	border-radius:2px;
+	border:solid 1.8px rgba(51,102,255,1);
+}
+</style>
+</head>
+
+<body>
+<form method="post" action="../../../../wamp/www/test/contactform.php">
+<ul id="dropdown">
+<li id="logo"><img src="Images/logo.png" height="80" width="80" title="LoGo" /></li>
+<li id="home"><a href="home.html" id="a-all">HOME</a></li>
+<li id="lib"><a href="" id="a-all">LIBRARY</a>
+	<ul id="sub-dropdown-lib">
+    <li><a href="audlib.html">AUDIO</a></li>
+    <li><a href="vidlib.html">VIDEO</a></li>
+    <li><a href="gallery.html">GALLERY</a></li>
+    </ul>
+</li>
+<li id="about"><a href="" id="a-all">ABOUT</a>
+	<ul id="sub-dropdown-about">
+    <li><a href="home.html#division">ABOUT US</a></li>
+    <li><a href="home.html#division">ABOUT SITE</a></li>
+    </ul>
+</li>
+<li id="work"><a href="home.html#what_we_do" id="a-all">OUR WORK</a></li>
+<li id="team"><a href="home.html#our_team" id="a-all">TEAM</a></li>
+<li id="contact"><a href="home.html#message" id="a-all">CONTACT</a></li>
+<li id="forums"><a href="contact.html" id="a-all">JOIN US</a></li>
+</ul>
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<div id="modal">
+<div id="parallax">
+<center>
+<div id="contact-details">
+<br><br>
+<input type="text" name="name" placeholder="Your Name" autofocus required />
+<br /><br />
+<input type="text" name="email" placeholder="youremail@example.com" required />
+<br /><br />
+<input type="text" name="phone" placeholder="ContactNo."  required />
+<br /><br />
+<textarea rows="3" cols="40" name="comment" placeholder="Your Feedback!..." required></textarea>
+<br /><br /> 
+<input type="reset" name="reset" value="   RESET   " />
+<input type="submit" name="submit" checked="checked" value="   SUBMIT   " style="margin-left:30px;" />
+<br /><br>
+<p align="left" style="margin-left:20px;"><input type="checkbox" name="c1" checked>Remember Me..</p>
+</div>
+</center>
+</div>
+</div>
+</form>
+</body>
+</html>

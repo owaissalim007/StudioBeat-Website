@@ -1,0 +1,191 @@
+@charset "utf-8";
+/* CSS Document */
+#division{
+	background-image:url(../Images/about.jpg);
+	background-attachment:fixed;
+	background-size:cover;
+	background-repeat:no-repeat;
+	position:relative;
+	top:800px;
+	z-index:2;
+	height:900px;
+	font-size:24px;
+}
+#division_parallax{
+	background-color:rgba(0,0,0,0.7);
+	height:900px;
+	color:#fff;
+}
+#division h1{
+	font-size:36px;
+	text-align:center;
+}
+#division_us{
+	position:absolute;
+	left:8.5%;
+	top:5%;
+	background-color:transparent;
+	font-size:60px;
+}
+#division_site{
+	position:absolute;
+	right:3%;
+	top:5%;
+	background-color:transparent;
+	font-size:60px;
+}
+#division_about{
+	position:absolute;
+	left:4%;
+	top:16%;
+	text-align:left;
+	font-size:26px;
+	width:550px;
+	background-color:transparent;
+}
+#division_follow{
+	font-size:42px;
+	margin-left:80px;
+}
+#division_follow hr{
+	position:absolute;
+	top:96%;
+	left:54%;
+}
+#division_audio{
+	position:absolute;
+	z-index:2;
+	height:auto;
+	width:400px;
+	padding:10px;
+	text-align:justify;
+	background-color:transparent;
+	right:5%;
+	top:15%;
+}
+#division_video{
+	position:absolute;
+	z-index:2;
+	height:auto;
+	width:400px;
+	padding:10px;
+	text-align:justify;
+	background-color:transparent;
+	right:5%;
+	top:50%;
+}
+#division_footer{
+	position:absolute;
+	bottom:1%;
+	left:50%;
+	width:700px;
+	font-size:30px;
+	font-weight:bold;
+	transform:translate(-50%,0);
+}
+#our_team{
+	position:absolute;
+	z-index:2;
+	background-color:transparent;
+	color:#000;
+	font-size:30px;
+	top:2760px;
+	margin-left:265px;
+}
+#our_team img{
+	margin-left:100px;
+	margin-right:100px;
+	border-radius:100%;
+}
+#our_team span{
+	margin-left:185px;
+	margin-right:95px;
+}
+
+#what_we_do{
+	position:relative;
+	z-index:2;
+	width:100%;
+	background-color:transparent;
+	color:#000;
+	font-size:30px;
+}
+#what_we_do img{
+	position:abbsolute;
+}
+#ourwork_col1, #ourwork_col2, #ourwork_col3, #ourwork_col4, #ourwork_col5, #ourwork_col6 {
+	position:absolute;
+	color:#000;
+	height:auto;
+	width:350px;
+	font-size:22px;
+	text-align:left;
+	padding:0px 3px 0px 3px;
+	background-color:transparent;
+	text-align:center;
+}
+#ourwork_col1, #ourwork_col4{
+	left:5%;
+}
+#ourwork_col2, #ourwork_col5{
+	left:37%;
+}
+#ourwork_col3, #ourwork_col6{
+	right:5%;
+}
+#ourwork_col4, #ourwork_col5, #ourwork_col6{
+	top:500px;
+}
+#message{
+	position:relative;
+	top:1150px;
+	z-index:2;
+	height:800px;
+	color:#fff;
+	font-size:50px;
+	background-image:url(../Images/contact.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+#mail a{
+	text-decoration:none;
+	font-size:80px;
+	color:#000;
+}
+#mythought{
+	font-style:italic;
+	font-weight:bold;
+	font-size:60px;
+}
+#site_header{
+	position:relative;
+	font-size:90px;
+	font-weight:bold;
+	z-index:60;
+}
+#site_name{
+	position:relative;
+	color:#09F;
+	font-size:90px;
+	font-weight:bold;
+	cursor:pointer;
+	z-index:60;
+}
+#site_name a{
+	text-decoration:none;
+	color:#09f;
+}	
+#social_icons{
+	cursor:pointer;
+	color:#fff;
+	font-size:36px;
+}
+#social_icons:hover{
+	color:#777;
+}
+
+
+
+
+
+

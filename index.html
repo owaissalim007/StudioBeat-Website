@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>StudioBeat</title>
+<link href="CSS/abc.css" type="text/css" rel="stylesheet" />
+<style>
+*{ margin:0; padding:0;}
+#dropdown{
+	background-color:transparent;
+}
+#dropdown li a{
+	color:#fff;
+}
+video{
+	position:fixed;
+	min-height:100%;
+	min-height:120%;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	height:100%;
+	width:100%;
+	z-index:1;
+}
+#thought1{
+	position:relative;
+	z-index:5;
+	color:#fff;
+	font-size:0px;
+	text-align:center;
+	display:none;
+	animation:mymove 20s linear;
+}
+#thought2{
+	position:relative;
+	z-index:7;
+	color:#fff;
+	font-size:0px;
+	text-align:center;
+	display:none;
+	animation:mymove 15s linear;
+}
+#thought3{
+	position:relative;
+	z-index:8;
+	color:#fff;
+	font-size:0px;
+	text-align:center;
+	display:none;
+	animation:mymove 10s linear;
+}
+#thought4{
+	position:relative;
+	z-index:9;
+	color:#fff;
+	font-size:0px;
+	text-align:center;
+	display:none;
+	animation:mymove 10s linear;
+}
+
+@keyframes mymove {
+	0%{opacity:0; font-size:0px; transform:translate(0,350px);}
+	5%{opacity:0.1; font-size:8px; transform:translate(0,340px);}
+	10%{opacity:0.1; font-size:16px; transform:translate(0,330px);}
+	15%{opacity:0.1; font-size:24px; transform:translate(0,320px);}
+	20%{opacity:0.2; font-size:32px; transform:translate(0,310px);}
+	25%{opacity:0.3; font-size:40px; transform:translate(0,300px);}
+	30%{opacity:0.4; font-size:48px; transform:translate(0,290px);}
+	35%{opacity:0.5; font-size:56px; transform:translate(0,280px);}
+	40%{opacity:0.6; font-size:64px; transform:translate(0,270px);}
+	45%{opacity:0.7; font-size:72px; transform:translate(0,260px);}
+	50%{opacity:0.8; font-size:72px; transform:translate(0,260px);}
+	60%{opacity:0.9; font-size:72px; transform:translate(0,260px);}
+	70%{opacity:1; font-size:72px; transform:translate(0,260px);}
+	80%{opacity:0.6; font-size:60px; transform:translate(0,260px);}
+	85%{opacity:0.4; font-size:50px; transform:translate(0,260px);}
+	90%{opacity:0.1; font-size:40px; transform:translate(0,260px);}
+	100%{opacity:0; font-size:0; transform:translate(0,260px);}
+}
+#loader{
+	background-color:transparent;
+	z-index:20;
+	opacity:1;
+}
+#loader_img{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	display:none;
+	z-index:20;
+	opacity:1;
+}
+#skip{
+	position:absolute;
+	right:2%;
+	bottom:2%;
+	padding:5px;
+	z-index:10;
+	font-size:28px;
+	font-weight:bold;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	color:#fff;
+}
+</style>
+
+<script>
+function transition_thought1()		//call div and make it display block
+{
+	var t1 = document.getElementById("thought1").style.display="block";	
+}
+function transition_thought2()		//call div and make it display block
+{
+	var t2 = document.getElementById("thought2").style.display="block";	
+}
+function transition_thought3()		//call div and make it display block
+{
+	var t1 = document.getElementById("thought3").style.display="block";	
+}
+function transition_thought4()		//call div and make it display block
+{
+	var t1 = document.getElementById("thought4").style.display="block";	
+}
+function loader()
+{
+	var l = document.getElementById("loader_img").style.display="block";
+	var k = document.getElementById("whole").style.opacity="0.9";
+}
+function loader_exit()
+{
+	var m = document.getElementById("loader_img").style.display="none";
+	var n = document.getElementById("whole").style.opacity="1";
+}
+function main_window()
+{
+	var p = window.open("home.html","_self");
+}
+function settime_thought()		//set timeout for run
+{
+	var a = setTimeout("transition_thought1()",4000);
+	var b = setTimeout("transition_thought2()",25000);
+	var c = setTimeout("transition_thought3()",40000);
+	var d = setTimeout("transition_thought4()",47000);
+	var e = setTimeout("loader()",57000);
+	var f = setTimeout("loader_exit()",62000);
+	var g = setTimeout("main_window()",61500);
+}
+</script>
+
+</head>
+
+<body onload="settime_thought()" id="whole">
+
+<video id="vid" width="100%" height="100%">
+	<source src="./videoplayback.mp4" type="video/mp4" />
+</video>
+<script>
+    document.getElementById('vid').play();
+</script>
+
+<ul id="dropdown">
+<li id="logo"><img src="Images/logo.png" height="80" width="80" title="LoGo" /></li>
+<li id="home"><a href="home.html" id="a-all">HOME</a></li>
+<li id="lib"><a href="" id="a-all">LIBRARY</a>
+	<ul id="sub-dropdown-lib">
+    <li><a href="audlib.html">AUDIO</a></li>
+    <li><a href="vidlib.html">VIDEO</a></li>
+    <li><a href="gallery.html">GALLERY</a></li>
+    </ul>
+</li>
+<li id="about"><a href="" id="a-all">ABOUT</a>
+	<ul id="sub-dropdown-about">
+    <li><a href="home.html#division">ABOUT US</a></li>
+    <li><a href="home.html#division">ABOUT SITE</a></li>
+    </ul>
+</li>
+<li id="work"><a href="home.html#what_we_do" id="a-all">OUR WORK</a></li>
+<li id="team"><a href="home.html#our_team" id="a-all">TEAM</a></li>
+<li id="contact"><a href="home.html#message" id="a-all">CONTACT</a></li>
+<li id="forums"><a href="contact.html" id="a-all">JOIN US</a></li>
+</ul>
+<center>
+<div id="thought1">
+When you want something, all the universe<br />conspires in helping you to achieve it.
+</div>
+<div id="thought2">
+Every seed has the capacity to grow<br />into a healthy tree.
+</div>
+<div id="thought3">
+When you have faith in yourselves
+</div>
+<div id="thought4">
+You can do miracles.
+</div>
+
+<div id="loader">
+<img src="Images/loader.gif" id="loader_img" />
+</div>
+
+</center>
+
+<a href="home.html" id="skip">SKIP &gt;&gt;</a>
+
+</body>
+</html>

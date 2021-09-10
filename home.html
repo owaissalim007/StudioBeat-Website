@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>StudioBeat.com</title>
+<link rel="stylesheet" type="text/css" href="CSS/abc.css" />
+<link rel="stylesheet" type="text/css" href="CSS/video_back.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<style type="text/css">
+#wrapper {
+	position:absolute;
+	top:0;
+	left:0;
+	display: block;
+	height: 650px;
+	width: 100%;
+}
+#container {
+	position:absolute;
+	display: block;
+	float: left;
+	height: 650px;
+	width: 100%;
+	overflow:auto;
+}
+#prev{
+	display: block;
+	float: left;
+	height: 650px;
+	width: 130px;
+	font-size:160px;
+	cursor:pointer;
+	color:#000;
+	position: relative;
+	line-height:4;
+	text-align:right;
+	z-index:50;
+}
+#next{
+	display: block;
+	float: right;
+	height: 650px;
+	width: 130px;
+	cursor:pointer;
+	font-size:160px;
+	color:#000;
+	position: relative;
+	line-height:4;
+	text-align:left;
+	z-index:50;
+}
+#slider {
+	display: block;
+	float: left;
+	height: 650px;
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+}
+#prev:hover{
+	background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.8));
+	color:#eee;
+}
+#next:hover{
+	background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0));
+	color:#eee;
+}
+</style>
+<script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script src="JS/jquery.cycle.all.js"></script>
+<script type="text/javascript">
+$("document").ready(function(){
+$('#slider').cycle({ 
+    fx:     'scrollHorz', 
+    speed:  'slow', 
+
+    next:   '#next', 
+    prev:   '#prev' 
+});
+})
+</script>
+</head>
+
+<body>
+
+<center>
+<ul id="dropdown">
+<li id="logo"><img src="Images/logo.png" height="80" width="80" title="LoGo" /></li>
+<li id="home"><a href="home.html" id="a-all">HOME</a></li>
+<li id="lib"><a href="" id="a-all">LIBRARY</a>
+	<ul id="sub-dropdown-lib">
+    <li><a href="audlib.html">AUDIO</a></li>
+    <li><a href="vidlib.html">VIDEO</a></li>
+    <li><a href="gallery.html">GALLERY</a></li>
+    </ul>
+</li>
+<li id="about"><a href="" id="a-all">ABOUT</a>
+	<ul id="sub-dropdown-about">
+    <li><a href="home.html#division">ABOUT US</a></li>
+    <li><a href="home.html#division">ABOUT SITE</a></li>
+    </ul>
+</li>
+<li id="work"><a href="home.html#what_we_do" id="a-all">OUR WORK</a></li>
+<li id="team"><a href="home.html#our_team" id="a-all">TEAM</a></li>
+<li id="contact"><a href="home.html#message" id="a-all">CONTACT</a></li>
+<li id="forums"><a href="contact.html" id="a-all">JOIN US</a></li>
+</ul>
+
+<div id="wrapper">
+	<div id="container">
+    	<div class="controller" id="prev">&lt;</div>
+        <div id="slider">
+        <img src="Images/ss1.jpg" width="100%" height="700" />
+        <img src="Images/ss2.jpg" width="100%" height="700" />
+        <img src="Images/ss3.jpg" width="100%" height="700" />
+        <img src="Images/ss4.jpg" width="100%" height="700" />
+        <img src="Images/ss5.jpg" width="100%" height="700" />
+        <img src="Images/ss6.jpg" width="100%" height="700" />
+        </div>
+        <div class="controller" id="next">&gt;</div>
+    </div>
+</div>
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+<div id="site_header">
+STUDIO @ <span id="site_name"><a href="home.html" title="BEAT.com">BEAT</a></span></h1>
+</div>
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+<div id="what_we_do">
+<h1>What We Do</h1>
+<hr align="center" color="#000" width="60" noshade="noshade" size="3" style="border-radius:50px;" />
+<br /><br />
+
+	<div id="ourwork_col1">
+    <center><img src="Images/innov.png" height="150" width="150" /></center>
+    <div style="text-align:center; font-size:30px; font-weight:bold;">INNOVATION</div><br />
+    BEAT fosters creativity in music. Latest mp3's with much more remixes can be insighted here.
+    </div>
+    <div id="ourwork_col2">
+    <center><img src="Images/perfect.png" height="150" width="150" /></center>
+    <div style="text-align:center; font-size:30px; font-weight:bold;">PERFECTION</div><br />
+	There is always a scope of betterment. BEAT always works to become the best.
+    </div>
+    <div id="ourwork_col3">
+    <center><img src="Images/benef.png" height="150" width="150" /></center>
+    <div style="text-align:center; font-size:30px; font-weight:bold;">MUTUAL BENEFIT</div><br />
+    BEAT works for mutual benefit of customers. It always stands for its customer's needs and tries to accomplish it.
+    </div>
+    <div id="ourwork_col4">
+    <center><img src="Images/technology.png" height="150" width="180" /></center>
+    <div style="text-align:center; font-size:30px; font-weight:bold;">Technologies</div><br />
+    Without technology, we can't expect a world where advancement can happen and think of a digital world.
+    </div>
+    <div id="ourwork_col5">
+    <center><img src="Images/web development.png" height="150" width="150" /></center>
+    <div style="text-align:center; font-size:30px; font-weight:bold;">Web Develpoment</div><br />
+    We work on HTML, PHP and JavaScript for web development both for client-side and server-side scripting.
+    </div>
+    <div id="ourwork_col6">
+    <center><img src="Images/internet.png" height="150" width="120" /></center>
+    <div style="text-align:center; font-size:30px; font-weight:bold;">Love Internet</div><br />
+    Internet has been mankind's greatest means of communication ever. With the advanced technology and reliability, innovations are becoming
+    the backbone of internet such as real-time communication.
+    </div>
+    
+</div>
+
+<br /><br /><br /><br />
+
+
+<div id="division">
+<div id="division_parallax">
+<span id="division_us">ABOUT US
+<hr align="center" color="#fff" width="15%" size="2" noshade="noshade" />
+</span>
+<span id="division_site">ABOUT THE SITE
+<hr align="center" color="#fff" width="20%" size="2" noshade="noshade" />
+</span>
+<br />
+
+<div id="division_about">
+At <span id="site_name" style="font-size:40px;">beatstudio.com</span>, it's<br />always about YOUR needs and desires.<br />
+Knowing and understanding our customer's<br />needs and fulfilling them not just for the<br />sake of accomplishment but for the trust
+<br />and satisfaction of both.
+<br /><br />
+At <span id="site_name" style="font-size:40px;">beatstudio.com</span>, we are<br />tempted and committed in achieving and<br />performing
+to give 100% result. We are<br />totally devoted to our site and its reliability.<br />Web hosting, website design alongwith<br />
+web-based software are a part of our service.
+<br /><br /><br />
+
+<div id="division_follow">
+Follow Us On -
+<div>
+&nbsp;
+<a href="https://www.apple.com/in/">
+<i class="fa fa-apple" aria-hidden="true" id="social_icons"></i></a>
+<a href="https://www.facebook.com">
+<i class="fa fa-facebook-square" aria-hidden="true" id="social_icons"></i></a>
+<a href="https://www.google.com/">
+<i class="fa fa-google-plus-square" aria-hidden="true" id="social_icons"></i></a>
+<a href="https://www.twitter.com">
+<i class="fa fa-twitter-square" aria-hidden="true" id="social_icons"></i></a>
+<a href="https://www.youtube.com">
+<i class="fa fa-youtube-square" aria-hidden="true" id="social_icons"></i></a>
+</div>
+</div>
+
+</div>
+
+
+<div id="division_audio">
+<h1 align="center">AUD-Folio</h1>
+<center><hr align="center" color="#fff" width="50" noshade="noshade" size="1" style="border-radius:50px;" /></center>
+<br />
+Beat is the original collection of rhythms and mp3 songs.
+With the dawn of civilisation, the internet community has increased its boundaries.
+And with this, people have increased thein extent to the internet and almost all the works are being done here(like downloading and uploading).
+</div>
+
+
+<div id="division_video">
+<h1 align="center">VID-Folio</h1>
+<center><hr align="center" color="#fff" width="50" noshade="noshade" size="1" style="border-radius:50px;" /></center>
+<br />
+The most powerful tools of visual communication can be seen on our site.
+Videos & graphics are best ways to convey and communicate to each other.
+The Internet community has provided a digital platform where one can share his/her views and be connected to the Internet community.
+</div>
+
+<div id="division_footer">
+<hr align="center" color="#fff" width="100%" size="1" noshade="noshade" style="opacity:0.2;" />
+Learn the latest trends,insights and best practices from the brightest minds in media and technology<br />
+<span id="site_name" style="font-size:36px;">@ beatstudio.com</span>
+<hr align="center" color="#fff" width="100%" size="1" noshade="noshade" style="opacity:0.2;" />
+</div>
+
+<br />
+</div>
+</div>
+
+<br /><br /><br /><br /><br /><br />
+
+
+<div id="our_team">
+<h1>Our Team</h1>
+<hr align="center" color="#000" width="60" noshade="noshade" size="3" style="border-radius:50px;" /><br />
+<img src="Images/team1.png" height="200" width="200" />
+<img src="Images/team2.jpg" height="200" width="200" /><br />
+<span id="hr">HR</span>
+<span id="programmer">PROGRAMMER</span>
+</div>
+
+<br /><br />
+
+<div id="message">
+
+<br />
+<p>For more details and oppurtunities, contact :-
+<br />+91-9865xxxx09
+</p><br />
+<span id="mythought">
+"THE WORLD IS TOO SMALL FOR A LEARNED, BUT TOO BIG FOR A LEARNER." <br /> - Owais Salim
+</span>
+<br /><br />
+<img src="Images/mail.png" height="100" width="140" />
+<br />
+<span id="mail"><a href="mailto:abc@gmail.com">salimowais007@gmail.com</a></span>
+
+</div>
+
+<br /><br />
+
+
+</center>
+<br /><br />
+</body>
+</html>

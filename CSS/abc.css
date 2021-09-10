@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+#dropdown{
+	position:fixed;
+	top:0;
+	left:0;
+	height:80px;
+	width:100%;
+	background-color:rgba(255,255,255,0.9);
+	text-align:center;
+	z-index:100;
+	list-style:none;
+	box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.2);
+}
+#dropdown li{
+	float:left;
+	width:160px;
+	font-size:20px;
+	font-weight:bold;
+	line-height:4;
+}
+#dropdown li a{
+	text-decoration:none;
+	color:#000;
+	padding:10px;
+	border-radius:8px;
+}
+#dropdown li a:hover{
+	background-color:#111;
+	color:#fff;
+}
+#dropdown li:hover #a-all{
+	background-color:#111;
+	color:#fff;
+}
+#dropdown li:hover #sub-dropdown-lib li{
+	display:block;
+}
+#dropdown li:hover #sub-dropdown-about li{
+	display:block;
+}
+#sub-dropdown-lib{
+	list-style:none;
+	background-color:#111;
+}
+#sub-dropdown-about{
+	list-style:none;
+	background-color:#111;
+}
+#sub-dropdown-lib li{
+	display:none;
+	background-color:#111;
+}
+#sub-dropdown-about li{
+	display:none;
+	background-color:#111;
+}
+#sub-dropdown-lib li a{
+	display:block;
+	border-radius:0px;
+	color:#fff;
+	height:40px;
+	line-height:2;
+}
+#sub-dropdown-about li a{
+	display:block;
+	border-radius:0px;
+	color:#fff;
+	height:40px;
+	line-height:2;
+}
+#sub-dropdown-lib li a:hover{
+	background-color:#f0390f;
+}
+#sub-dropdown-about li a:hover{
+	background-color:#f0390f;
+}
+
+
+
+
+#logo{
+	margin-left:10px;
+	margin-top:3px;
+}
